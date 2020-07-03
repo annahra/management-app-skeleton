@@ -1,0 +1,1 @@
+{"version":3,"file":"news.schema.js","sourceRoot":"","sources":["../../../src/news/schemas/news.schema.ts"],"names":[],"mappings":";;AAAA,qCAAqC;AAExB,QAAA,UAAU,GAAG,IAAI,QAAQ,CAAC,MAAM,CAAC;IAC1C,KAAK,EAAE,MAAM;IACb,IAAI,EAAE,MAAM;IACZ,IAAI,EAAE,MAAM;IACZ,UAAU,EAAE,EAAE,IAAI,EAAE,IAAI,EAAE,OAAO,EAAE,IAAI,CAAC,GAAG,EAAE;CAChD,CAAC,CAAC"}
