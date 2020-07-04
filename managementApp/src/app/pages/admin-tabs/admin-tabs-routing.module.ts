@@ -20,6 +20,10 @@ const routes: Routes = [
       {
         path: 'news',
         loadChildren: () => import('../admin-news/admin-news.module').then(m => m.AdminNewsPageModule)
+      },
+      {
+        path: 'news/:id',
+        loadChildren: () => import('../admin-news-details/admin-news-details.module').then(m => m.AdminNewsDetailsPageModule)
       }
     ]
   }

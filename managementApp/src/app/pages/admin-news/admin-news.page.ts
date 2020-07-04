@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { NewsService } from 'src/app/services/news.service';
 
 @Component({
   selector: 'app-admin-news',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminNewsPage implements OnInit {
 
-  constructor() { }
+  news: Observable<any[]>;
+
+  constructor(private newsService: NewsService) { }
 
   ngOnInit() {
+  }
+
+  ionViewWillEnter(){
+    this.news = this.newsService.getNews();
   }
 
 }
