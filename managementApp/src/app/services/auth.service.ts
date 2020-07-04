@@ -54,6 +54,6 @@ export class AuthService {
   }
 
   logout() {
-    
+    return this.storage.remove(TOKEN_KEY);
   }
 }
