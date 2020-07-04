@@ -35,9 +35,9 @@ export class LoginPage implements OnInit {
         loading.dismiss();
         let role = user['role'];
         if (role == 'PRINCIPAL' || role == 'TEACHER') {
-          // this.router.navigateByUrl('/admin/users');
+          this.router.navigateByUrl('/admin');
         } else if (role == 'STUDENT') {
-          // this.router.navigateByUrl('/student');
+          this.router.navigateByUrl('/student');
         }
       },
       async err => {
